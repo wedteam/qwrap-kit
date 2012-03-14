@@ -1,0 +1,35 @@
+Qwrap, an open source(BSD) javascript framework, which is created by Baidu Youa front-end team "WED".
+
+Where the name comes from? Query and Wrap、Quick Wrap、 Cute Wrap？Well, anything as you choose ^_^.
+
+The basics of using Qwrap (some live examples in Youa project):
+To start, just simply get a copy of the Qwrap library and include /core_dom_youa.js.
+Using it just like using jQuery (W is the same as $ in Qwrap):
+
+    W('textarea').css('color','red').css('width','600px');
+
+Using it just like using prototype (the prototype style):
+
+    alert('Time: '+new Date().format('yyyy-MM-dd hh:mm:ss'));
+
+Loading on demand as YUI3 (in this example, jQuery library is loaded on demand as a module. See also: seed app):
+    use('jQuery',function(){$('textarea').css('color','black');});
+
+Static call as YUI2 (static call is for components developers. See also: pure app):
+    Dom.setStyle(document.body,'color','red');
+
+Further, it is not in conflict with other frameworks such as jquey, yui, and etc.
+
+Why QWrap?
+There are numerous frameworks or frame fetters:p. Prototype、YUI、JQuery、Dojo…… they all have their own  disadvantages as well as advantages. The unique design and implementation of Qwrap, enables:
+    The DOM functions provided by Qwrap is convenient as JQuery is, but not limited by jQuery's "just focus on DOM", it also provides lots of functions outsides DOM.
+    Both the prototype methods and generic functions as javascript1.6 are provided. Users can choose what they need.
+    The static method library as YUI2, and the so called Helper standard (which enables the real static), enable components developers to build solo components
+    The use method learned from YUI3, is modified to be more adaptable by discarding the over-cleanliness of YUI3.
+    This unique design of QWrap: Helper + Wrap + Retouch + Apps, brings spirit that waiting to be discovered by you (See also: the introduction of design in QWrap blog).
+
+Getting involved:
+QWrap is a cooperation effort of WED, what we can contribute is limited, so we need your help!
+You can make a difference by your attention, contribution, promotion, and application.
+
+Translated by Teng (2011-07-31)
